@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mostrando: blue;
+  --esperando: rgba(0,0,255, .5) ;
+  --flotando: white ;
+}
+
+body{
+  background: blue;
+  color: #000;
+  font-family: Verdana;
+}
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(90% - 2rem), 500px);
+    height:auto;
+    padding: 1rem;
+    margin: auto;
+    background: greenyellow;
+    border-radius: .5rem;
+    z-index: 9999;
+}
+
+p{
+  padding:0.5rem 0;
+}
+
+a.holi:hover:after {
+  content:" ★";
+}
+
+
+nav{
+  margin:1rem 0;
+}
+
+nav a{
+  line-height: 1;
+  text-decoration: none;
+  color:white;
+  margin:0 1rem 0 0;
+  padding:0.3rem 1rem;
+  background:var(--esperando);
+  border-radius: .6rem;
+  transition:all ease .75s;
+}
+
+nav a:hover{
+  color:black;
+  background:var(--flotando);  
+  transition:all ease .75s;
+}
+
+nav a.active{
+  color:white;
+  background:var(--mostrando);
+}
+
+h1, h2 {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  color: blue;
+}
+
+h2 {
+  font-size: 20px;
+  color: seagreen;
+}
